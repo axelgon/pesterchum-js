@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pesterchum</title>
+	<link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="./chumlogo.png">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="chat.js" defer></script>
+</head>
+<body>
+	<div class="box">
+    <h1>Pesterchum 6.0</h1>
+		<div class="friendArea">
+			<div class="logo">
+        <img height="80" width="80" src="./chumlogo.png"/>
+        <h2>Chat Client</h2>
+      </div>
+      <div class="credArea">
+			     <h3>Mychumhandle:</h3>
+           <span class="inLine" id='loginInLine'>
+  			     <input class="inputUsername" placeholder="username"/>
+             <button class="login"> Log In </button>
+           </span>
+      </div>
+			<h3>Chumroll:</h3>
+			<div class="friends">
+        <ul class="allFriends"></ul>
+      </div>
+			<span class="friendButtons">
+				<button>Add</button>
+				<button>Block</button>
+				<button>Pester!</button>
+			</span>
+		</div>
+		<div class="chatArea">
+			<h2> Pesterlog: </h2>
+			<div class="messages">
+        <ul class="allMessages"></ul>
+      </div>
+			<span class="inLine">
+				<input class="inputMessage"/>
+				<button class="send">Pester!</button>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
